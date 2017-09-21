@@ -29,8 +29,9 @@
           <pathelement location="${test.build.dir}"/>
         </classpath>
         <formatter type="brief" usefile="false" />
-        <batchtest>
-          <formatter type="xml" />
+        <batchtest todir="${test.src.dir}"> 
+         <formatter type="xml" />
+            
             <fileset dir="${test.src.dir}" includes="**/*Test.java" />
         </batchtest>
     </junit>
