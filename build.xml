@@ -3,6 +3,7 @@
   <property name="main.src.dir" value="src/main/java"/>
   <property name="test.build.dir" value="build/test"/>
   <property name="test.src.dir" value="src/test/java"/>
+  <property name="report.src.dir" value="src/report"/>
 
   <path id="classpath.test">
     <pathelement location="lib/junit.jar"/>
@@ -31,7 +32,7 @@
           <pathelement location="${test.build.dir}"/>
         </classpath>
         <formatter type="brief" usefile="false" />
-        <batchtest todir="${test.src.dir}"> 
+        <batchtest todir="${report.src.dir}"> 
          <formatter type="xml" />
             
               <fileset dir="${test.src.dir}">
